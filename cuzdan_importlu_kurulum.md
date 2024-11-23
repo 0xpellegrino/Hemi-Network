@@ -7,10 +7,11 @@
 
 ```bash
 # Öncelikle ihtiyacımız olan binary dosyasını çekiyoruz.
-wget https://github.com/hemilabs/heminetwork/releases/download/v0.4.3/heminetwork_v0.4.3_linux_amd64.tar.gz
+wget https://github.com/hemilabs/heminetwork/releases/download/v0.5.0/heminetwork_v0.5.0_linux_arm64.tar.gz
+
 
 # İndirdiğimiz sıkıştırılmış dosyayı dışarı çıkaralım ve dosya içerisine girelim.
-tar xvf heminetwork_v0.4.3_linux_amd64.tar.gz && cd heminetwork_v0.4.3_linux_amd64
+tar xvf heminetwork_v0.5.0_linux_arm64.tar.gz && cd heminetwork_v0.5.0_linux_arm64
 
 # Eski cüzdan oluşturduğum sunucudan aşağıdaki kodla cüzdan bilgilerini alalım.
 
@@ -33,7 +34,7 @@ screen -S hemi
 # Şimdi cüzdan bilgilerimizden bize private_key kısmı gerekli. Aşağıda değiştirip uygulayın.
 
 echo 'export POPM_BTC_PRIVKEY=PRIVATE KEY BURAYA YAZILACAK' >> ~/.bashrc
-echo 'export POPM_STATIC_FEE=50' >> ~/.bashrc
+echo 'export POPM_STATIC_FEE=550' >> ~/.bashrc
 echo 'export POPM_BFG_URL=wss://testnet.rpc.hemi.network/v1/ws/public' >> ~/.bashrc
 source ~/.bashrc
 
